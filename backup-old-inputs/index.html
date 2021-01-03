@@ -33,34 +33,34 @@
                 <h1 class="main__title">All notes in one workspace</h1>
                 <p class="main__subtitle">One tool for all your ideas. Write, plan and get organized.</p>
                 <form class="form__main" action="login.py" method="POST">
-                    <input class="form__input" type="text" name="login" id="login" placeholder="Your login...">
-                    <input class="form__input" type="password" name="password" id="password" placeholder="Password">
+                    <div class="form__group">
+                        <input class="form__input" type="text" name="login" id="login" placeholder=" ">
+                        <label class="form__label">Your login...</label>
+                    </div>
+                    <div class="form__group">
+                        <input class="form__input" type="password" name="password" id="password" placeholder=" ">
+                        <label class="form__label">Password...</label>
+                    </div>
                     <button class="form__button" type="submit" name= "submit" id="submit">Sign up</button>
                 </form>
                 <p class="form__subtext">Already have an account? <a class="link" href="#">Log in</a></p>
             </div>
         </div>
     </div>
-    <div class="popup">
+    <!-- <div class="popup">
         <div class="popup__content">
             <form class="form__popup" action="login.py" method="POST">
-                <h2 class="popup__title">Sign Up, Bro!</h2>
                 <div class="popup__group">
-                    <input class="form__input" type="text" name="login" id="login" placeholder="Your login...">
+                    <input class="popup__input" type="text" name="login" id="login" placeholder=" ">
+                    <label class="popup__label">Login</label>
                 </div>
                 <div class="popup__group">
-                    <input class="form__input" type="password" name="password" id="password" placeholder="Password">
+                    <input class="popup__input" type="password" name="password" id="password" placeholder=" ">
+                    <label class="popup__label">Pass</label>
                 </div>
                 <button class="form__button" type="submit" name= "submit" id="submit">Sign up</button>
             </form>
-            <img class="popup_image" src="/assets/popup_image.png" alt="">
         </div>
-    </div>
+    </div> -->
 </body>
-<script>
-        function OpenPopup() {
-        var popup = document.getElementById("myPopup");
-        popup.classList.toggle("show");
-    }
-    </script>
 </html>
